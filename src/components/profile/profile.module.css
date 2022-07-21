@@ -1,0 +1,61 @@
+.profile {
+    border: 2px solid green;
+    font-size: 20px;
+    background-color:rgb(178, 218, 240);
+    
+}
+
+.profileHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.profileHeader span {
+    font-weight: bold;
+}
+
+.profileHeader button {
+    margin: 0px 5px
+}
+
+.city {
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+    border-bottom: 2px solid green;
+    padding: 15px 0px;
+}
+
+.city span{
+   
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
+.temp {
+    font-size: 35px;
+    border-bottom: 2px solid green;
+    padding: 15px 0px;
+}
+.main {
+    border-bottom: 2px solid green;
+    padding: 15px 0px;
+}
+
+.main img {
+    width: 150px;
+    height: 150px;
+}
+
+
+.wind {
+    border-bottom: 2px solid green;
+    padding: 15px 0px;
+}
+
+.other {
+padding: 10px 0px;
+font-size: 17px;
+}
