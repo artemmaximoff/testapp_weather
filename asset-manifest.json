@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.7744d43c.css",
-    "main.js": "./static/js/main.1d6ea9d7.js",
+    "main.css": "./static/css/main.fda008ea.css",
+    "main.js": "./static/js/main.320d3845.js",
     "static/media/1624503242_1-oir_mobi-p-krasivaya-priroda-utrom-priroda-krasivo-fo-2.jpg": "./static/media/1624503242_1-oir_mobi-p-krasivaya-priroda-utrom-priroda-krasivo-fo-2.131406cbca6199434f8b.jpg",
     "static/media/preloader.svg": "./static/media/preloader.c02004e4c79e275608f4374cf7f458de.svg",
     "index.html": "./index.html",
-    "main.7744d43c.css.map": "./static/css/main.7744d43c.css.map",
-    "main.1d6ea9d7.js.map": "./static/js/main.1d6ea9d7.js.map"
+    "main.fda008ea.css.map": "./static/css/main.fda008ea.css.map",
+    "main.320d3845.js.map": "./static/js/main.320d3845.js.map"
   },
   "entrypoints": [
-    "static/css/main.7744d43c.css",
-    "static/js/main.1d6ea9d7.js"
+    "static/css/main.fda008ea.css",
+    "static/js/main.320d3845.js"
   ]
 }
