@@ -1,6 +1,6 @@
 {
   "homepage": ".",
-  "proxy": "http://localhost:3000",
+  "proxy": "http://192.168.0.103:62621",
   "name": "app",
   "version": "0.1.0",
   "private": true,

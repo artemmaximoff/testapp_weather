@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Navigate, NavLink } from "react-router-dom"
 import { setUserData } from "../../redux/authreducer";
 import s from './profile.module.css'
+import getPosition from '../../redux/api/api'
 import { useState } from "react";
 import { useEffect } from "react";
 import LoginPage from "../loginpage/loginpage";
@@ -20,12 +21,16 @@ const ProfilePage = () => {
     const [weather, setWeather] = useState([])
 
     useEffect(() => {
-
-        getWeather()
-            .then(weather => {
-                setWeather(weather);
+        if ('geolocation' in navigator) {
+            navigator.geolocation.getCurrentPosition(position => {
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+                getWeather(lat, lon)
+                    .then(weather => {
+                        setWeather(weather);
+                    })
             })
-
+        }
     }, [])
 
     let icon = weather.weather?.[0]?.icon;
@@ -73,7 +78,7 @@ const ProfilePage = () => {
             </div >
             <h3>Current weather</h3>
             <div className={s.city}>
-                <div>{weather.name}</div><span> ({weather.coord?.lat.toFixed(2)},</span><span> {weather.coord?.lon.toFixed(2)})</span>
+                <div>{weather.name}</div><span> ({weather.coord?.lat.toFixed(2)}&deg;,</span><span> {weather.coord?.lon.toFixed(2)}&deg;)</span>
             </div>
 
             <div className={s.temp} >{weather.main?.temp}&deg;</div>
