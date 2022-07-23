@@ -10,12 +10,6 @@ import rootReducer from './redux/rootReducer'
 const store = createStore(rootReducer)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-App.use(express.static(__dirname));
-
-App.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname, "index.html"));
-});
-
 root.render(
   <React.StrictMode>
     <BrowserRouter>

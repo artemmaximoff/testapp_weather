@@ -1,5 +1,5 @@
 {
-  "homepage": "https://artemmaximoff.github.io/testapp_weather",
+  "homepage": ".",
   "proxy": "http://localhost:3000",
   "name": "app",
   "version": "0.1.0",

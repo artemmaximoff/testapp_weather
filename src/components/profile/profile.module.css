@@ -1,7 +1,9 @@
 .profile {
     border: 2px solid green;
-    font-size: 20px;
-    background-color:rgb(178, 218, 240);
+    font-size: 30px;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px #000;
+    background-image:url(../../assets/1624503242_1-oir_mobi-p-krasivaya-priroda-utrom-priroda-krasivo-fo-2.jpg)
     
 }
 
@@ -23,8 +25,7 @@
 .city {
     font-size: 25px;
     font-weight: bold;
-    color: green;
-    border-bottom: 2px solid green;
+    
     padding: 15px 0px;
 }
 
@@ -32,15 +33,15 @@
    
     font-size: 20px;
     font-weight: bold;
-    color: green;
+    
 }
 .temp {
     font-size: 35px;
-    border-bottom: 2px solid green;
+  
     padding: 15px 0px;
 }
 .main {
-    border-bottom: 2px solid green;
+   
     padding: 15px 0px;
 }
 
@@ -51,11 +52,10 @@
 
 
 .wind {
-    border-bottom: 2px solid green;
     padding: 15px 0px;
 }
 
 .other {
 padding: 10px 0px;
-font-size: 17px;
+font-size: 25px;
 }

@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Navigate, NavLink } from "react-router-dom"
 import { setUserData } from "../../redux/authreducer";
 import s from './profile.module.css'
-import getPosition from '../../redux/api/api'
 import { useState } from "react";
 import { useEffect } from "react";
 import LoginPage from "../loginpage/loginpage";
@@ -21,16 +20,12 @@ const ProfilePage = () => {
     const [weather, setWeather] = useState([])
 
     useEffect(() => {
-        if ('geolocation' in navigator) {
-            navigator.geolocation.getCurrentPosition(position => {
-                const lat = position.coords.latitude;
-                const lon = position.coords.longitude;
-                getWeather(lat, lon)
-                    .then(weather => {
-                        setWeather(weather);
-                    })
+
+        getWeather()
+            .then(weather => {
+                setWeather(weather);
             })
-        }
+
     }, [])
 
     let icon = weather.weather?.[0]?.icon;
