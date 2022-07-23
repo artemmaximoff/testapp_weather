@@ -2,7 +2,7 @@
     border: 2px solid green;
     font-size: 30px;
     color: aliceblue;
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 3px 3px 3px #000;
     background-image:url(../../assets/1624503242_1-oir_mobi-p-krasivaya-priroda-utrom-priroda-krasivo-fo-2.jpg);
     
 }
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 10px;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .profileHeader span {
@@ -37,17 +37,19 @@
 }
 .temp {
     font-size: 35px;
-  
     padding: 15px 0px;
 }
 .main {
-   
-    padding: 15px 0px;
+    padding: 10px 0px;
+    
 }
 
 .main img {
     width: 150px;
     height: 150px;
+    background-color: rgba(255 , 255 ,255 , 0.2);
+    border-radius: 12px;
+    
 }
 
 

@@ -26,13 +26,14 @@ const ProfilePage = () => {
                 const lat = position.coords.latitude;
                 const lon = position.coords.longitude;
                 getWeather(lat, lon)
-                    .then(weather => {
-                        setWeather(weather);
+                    .then((response) => {
+                        setWeather(response.data);
+                        console.log(response.data)
                     })
             })
         }
     }, [])
-
+    debugger;
     let icon = weather.weather?.[0]?.icon;
     let deg = weather.wind?.deg
     const direction = () => {
